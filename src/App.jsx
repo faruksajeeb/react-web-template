@@ -14,11 +14,11 @@ const App = () => {
     return (
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={HomePage} />
-          <Route path="/team" element={TeamPage} />
-          <Route path="/services" element={ServicePage} />
-          <Route path="/projects" element={ProjectPage} />
-          <Route path="/testimonial" element={TestimonialPage} />
+          <Route path="/" element={<HomePage/>} />
+          <Route path="/team" element={<TeamPage/>} />
+          <Route path="/services" element={<ServicePage/>} />
+          <Route path="/projects" element={<ProjectPage/>} />
+          <Route path="/testimonial" element={<TestimonialPage/>} />
         </Routes>
       </BrowserRouter>
     );
@@ -26,13 +26,13 @@ const App = () => {
     return (
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={HomePage} />
-          <Route path="/team" element={TeamPage} />
-          <Route path="/services" element={ServicePage} />
-          <Route path="/projects" element={ProjectPage} />
-          <Route path="/testimonial" element={TestimonialPage} />
-          <Route path="/login" element={LoginPage} />
-          <Route path="/register" element={RegisterPage} />
+          <Route path="/" element={<HomePage/>} />
+          <Route path="/team" element={<TeamPage/>} />
+          <Route path="/services" element={<ServicePage/>} />
+          <Route path="/projects" element={<ProjectPage/>} />
+          <Route path="/testimonial" element={<TestimonialPage/>} />
+          <Route path="/login" element={<LoginPage/>} />
+          <Route path="/register" element={<RegisterPage/>} />
         </Routes>
       </BrowserRouter>
     );
