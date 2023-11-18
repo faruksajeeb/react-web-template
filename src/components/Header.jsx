@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -20,13 +21,13 @@ const Header = () => {
               
             </Nav>
             <Nav>
-              <Nav.Link className='mx-3 p-3 fw-bold' href="#deets">Home</Nav.Link>
-              <Nav.Link className='mx-3 p-3 fw-bold' href="#deets">Team</Nav.Link>
-              <Nav.Link className='mx-3 p-3 fw-bold' href="#deets">Service</Nav.Link>
-              <Nav.Link className='mx-3 p-3 fw-bold' href="#deets">Projects</Nav.Link>
-              <Nav.Link className='mx-3 p-3 fw-bold' href="#deets">Testimonials</Nav.Link>             
-              <Nav.Link className='mx-3 p-3 fw-bold btn btn-outline-success' href="#deets">Login</Nav.Link>             
-              <Nav.Link className='mx-3 p-3 fw-bold btn btn-success' href="#deets">Register</Nav.Link>             
+              <NavLink className='nav-link mx-3 p-3 fw-bold' to="/">Home</NavLink>
+              <NavLink className='nav-link mx-3 p-3 fw-bold' to="/team">Team</NavLink>
+              <NavLink className='nav-link mx-3 p-3 fw-bold' to="/service">Service</NavLink>
+              <NavLink className='nav-link mx-3 p-3 fw-bold' to="/project">Projects</NavLink>
+              <NavLink className='nav-link mx-3 p-3 fw-bold' to="/testimonial">Testimonials</NavLink>             
+              <NavLink className='nav-link mx-3 p-3 fw-bold btn btn-outline-success' href="#deets">Login</NavLink>             
+              <NavLink className='nav-link mx-3 p-3 fw-bold btn btn-success' href="#deets">Register</NavLink>             
             </Nav>
           </Navbar.Collapse>
         </Container>
