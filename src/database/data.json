@@ -1,0 +1,15 @@
+[
+    {
+        "id" : 1,
+        "name" : "Sajeeb Omar",
+        "age" : 20,
+        "grade" : "A",
+        "subjects" : ["Math","Bangla","Biology"]
+    },{
+        "id" : 2,
+        "name" : "Omar Faruk",
+        "age" : 20,
+        "grade" : "A",
+        "subjects" : ["Math","Bangla","Biology"]
+    }
+]
