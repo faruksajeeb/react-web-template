@@ -1,6 +1,6 @@
 import React from "react";
 import { getToken } from "./utility/TokenHelper";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter,HashRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import TeamPage from "./pages/TeamPage";
 import ServicePage from "./pages/ServicePage";
@@ -12,7 +12,7 @@ import RegisterPage from "./pages/RegisterPage";
 const App = () => {
   if (getToken()) {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<HomePage/>} />
           <Route path="/team" element={<TeamPage/>} />
@@ -20,11 +20,11 @@ const App = () => {
           <Route path="/projects" element={<ProjectPage/>} />
           <Route path="/testimonial" element={<TestimonialPage/>} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     );
   } else {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<HomePage/>} />
           <Route path="/team" element={<TeamPage/>} />
@@ -34,7 +34,7 @@ const App = () => {
           <Route path="/login" element={<LoginPage/>} />
           <Route path="/register" element={<RegisterPage/>} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 };

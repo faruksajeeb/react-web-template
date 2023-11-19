@@ -26,7 +26,7 @@ const TeamPage = () => {
                 <div className="col-md-4">
                     <div className="card">
                         <div className="card-body">
-                        <img src={teamMem1} alt="" />
+                        <img src={teamMem1} alt="" className="img-fluid" />
                         </div>
                         <div className="card-footer">
                             <h5 className="text-center">Devon Lane</h5>
@@ -37,7 +37,7 @@ const TeamPage = () => {
                 <div className="col-md-4">
                     <div className="card">
                         <div className="card-body">
-                        <img src={teamMem2} alt="" />
+                        <img src={teamMem2} alt="" className="img-fluid"  />
                         </div>
                         <div className="card-footer">
                             <h5 className="text-center">Devon Lane</h5>
@@ -48,7 +48,7 @@ const TeamPage = () => {
                 <div className="col-md-4">
                     <div className="card">
                         <div className="card-body">
-                        <img src={teamMem3} alt="" />
+                        <img src={teamMem3} alt="" className="img-fluid"  />
                         </div>
                         <div className="card-footer">
                             <h5 className="text-center">Devon Lane</h5>

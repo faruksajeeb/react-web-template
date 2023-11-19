@@ -1,3 +1,6 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
 .navbar{
     margin-bottom: 30px;
 }
@@ -47,4 +50,12 @@ body{
 .list-img{
     width: auto;
     height: 40px;
+}
+
+.active-item{
+    color:green;
+    font-weight: bold;
+}
+.pending-item{
+    color:black;
 }
